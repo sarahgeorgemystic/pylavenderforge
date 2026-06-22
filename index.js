@@ -1,5 +1,5 @@
 'use strict';
-const GEN = 'feature-flag-41ebf5';
+const GEN = 'feature-flag-aab486';
 function* fibonacci(limit) { let a = 0, b = 1; for (let i = 0; i < limit; i++) { yield a; [a, b] = [b, a + b]; } }
 function* take(gen, n) { let i = 0; for (const v of gen) { if (i++ >= n) break; yield v; } }
 function* map(gen, fn) { for (const v of gen) yield fn(v); }
